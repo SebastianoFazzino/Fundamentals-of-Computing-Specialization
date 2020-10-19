@@ -141,6 +141,6 @@ def mystical_octosphere(question):
 # These lines runs your main function!
 # You can change the questions if you wish.
 # Only yes-or-no style questions will make sense.
-mystical_octosphere("Will I get rich?")
-mystical_octosphere("Are the Cubs going to win the World Series?")
+mystical_octosphere("am I getting the accounatnt job?")
+#mystical_octosphere("Are the Cubs going to win the World Series?")
 
