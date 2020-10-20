@@ -1,5 +1,7 @@
-#in order to use simplegui on Spyder IDE, I had to first pip install it on anaconda prompt:
-# pip install SimpleGUITk.
+#SimpleGUITk is a wrapper for the CodeSkulptor SimpleGUI API using TkInter. CodeSkulptor is a browser-based Python interpreter used in the online course “An Introduction to Interactive Programming in Python”.
+#This wrapper makes it easier to work in the development environment of your choice while still being able to quickly test your implementation without using a web browser.
+
+#in order to use simplegui on Spyder IDE, I had to first pip install it on anaconda prompt: pip install SimpleGUITk.
 #Find more information about SimpleGUITk on this website: https://pypi.org/project/SimpleGUITk/
 
 
