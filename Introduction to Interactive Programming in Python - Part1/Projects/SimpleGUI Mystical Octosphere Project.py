@@ -7,7 +7,10 @@
 # and when you stop shaking, one of the sides
 # floats up and is readable against the window.
 
-
+# ***************************************************************************************
+# In this version of the mystical octosphere, I've implemeted a GUI interface that allows 
+# the user to input a question and get back an answer on the console
+# ***************************************************************************************
 
 # Up here, before everything else, we import the modules needed
 import random
