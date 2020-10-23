@@ -7,10 +7,10 @@ def draw(canvas):
     
 
 # Create frame and assign callbacks to event handlers
-#frame = simplegui.create_frame("It works", 400, 200)
-#frame.set_draw_handler(draw)
+frame = simplegui.create_frame("It works", 400, 200)
+frame.set_draw_handler(draw)
 
-#frame.start()
+frame.start()
 
 
 
@@ -25,12 +25,12 @@ def draw2(canvas):
     
 
 # Create frame and assign callbacks to event handlers
-#frame2 = simplegui.create_frame("This is easy", 400, 200)
-#frame2.set_draw_handler(draw2)
+frame2 = simplegui.create_frame("This is easy", 400, 200)
+frame2.set_draw_handler(draw2)
 
 
 # Start the frame animation
-#frame2.start()
+frame2.start()
 
 
 
@@ -41,10 +41,10 @@ def draw2(canvas):
 def draw3(canvas):
     canvas.draw_text("X", [0,60], 48, "red")
     
-#frame3 = simplegui.create_frame("X letter", 96, 96)
-#frame3.set_draw_handler(draw3)
+frame3 = simplegui.create_frame("X letter", 96, 96)
+frame3.set_draw_handler(draw3)
 
-#frame3.start()
+frame3.start()
 
 
 
@@ -121,22 +121,6 @@ frame4.add_input("Customize Color", custom_color, 150)
 
 #we visualize the frame
 frame4.start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
