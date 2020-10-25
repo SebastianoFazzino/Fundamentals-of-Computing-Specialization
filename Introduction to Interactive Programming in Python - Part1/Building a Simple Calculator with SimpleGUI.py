@@ -63,6 +63,7 @@ def enter(num):
         print("Input must be a number!")
         
 def draw(canvas):
+    '''visualise store and operand on the canvas'''
     canvas.draw_text(["store:", store], [100, 100], 36, "White")
     canvas.draw_text(["operand:", operand], [100, 200], 36, "White")
 
