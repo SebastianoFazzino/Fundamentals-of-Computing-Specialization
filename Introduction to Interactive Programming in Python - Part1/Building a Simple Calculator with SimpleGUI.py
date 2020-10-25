@@ -61,10 +61,15 @@ def enter(num):
        output()
     except:
         print("Input must be a number!")
+        
+def draw(canvas):
+    canvas.draw_text(["store:", store], [100, 100], 36, "White")
+    canvas.draw_text(["operand:", operand], [100, 200], 36, "White")
+
 
 
 # create frame
-f = simplegui.create_frame("Calculator",300,300)
+f = simplegui.create_frame("Calculator",500,300)
 
 width = 120
 # register event handlers
@@ -76,6 +81,7 @@ f.add_button("Mult", mult, width)
 f.add_button("Div", div, width)
 f.add_button("Clear", clear, width)
 f.add_input("Input", enter, width)
+f.set_draw_handler(draw)
 
 # get frame rolling
 f.start()
