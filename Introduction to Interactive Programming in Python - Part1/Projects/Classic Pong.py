@@ -26,7 +26,7 @@ color = ""
 # initialize ball_pos and ball_vel for new bal in middle of table
 # if direction is RIGHT, the ball's velocity is upper right, else upper left
 def start():
-    '''This function is used to initializa the game'''
+    '''This function is used to initialize the game'''
     global score1, score2
     score1 = 0
     score2 = 0
