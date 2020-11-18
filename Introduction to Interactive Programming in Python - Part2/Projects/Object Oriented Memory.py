@@ -1,3 +1,4 @@
+# In this version of memory game, I've used Tile class and its method to create a deck and to implement game's behavior
 
 import simpleguitk as simplegui
 import random
