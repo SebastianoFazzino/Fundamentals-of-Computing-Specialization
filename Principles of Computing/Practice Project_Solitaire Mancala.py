@@ -5,8 +5,7 @@ Goal: Move as many seeds from given houses into the store
 
 In GUI, you make ask computer AI to make move or click to attempt a legal move
 """
-
-import poc_mancala_gui 
+import poc_mancala_gui
 
 class SolitaireMancala:
     """
@@ -17,7 +16,7 @@ class SolitaireMancala:
         """
         Create Mancala game with empty store and no houses
         """
-        self.board = []
+        self._board = []
     
     def set_board(self, configuration):
         """
@@ -25,13 +24,13 @@ class SolitaireMancala:
         house zero corresponds to the store and is on right
         houses are number in ascending order from right to left
         """
-        self.board = list(configuration)
+        self._board = list(configuration)
     
     def __str__(self):
         """
         Return string representation for Mancala board
         """
-        board = list(self.board)
+        board = list(self._board)
         board.reverse()
         return str(board)
     
@@ -40,14 +39,14 @@ class SolitaireMancala:
         """
         Return the number of seeds in given house on board
         """
-        return self.board[house_num]
+        return self._board[house_num]
 
     def is_game_won(self):
         """
         Check to see if all houses but house zero are empty
         """
-        for index in range(1, len(self.board)):
-            if self.board[index] != 0:
+        for index in range(1, len(self._board)):
+            if self._board[index] != 0:
                 return False
         return True
     
@@ -56,8 +55,8 @@ class SolitaireMancala:
         """
         Check whether a given move is legal
         """
-        if 0 < house_num < len(self.board):
-            if house_num == self.board[house_num]:
+        if 0 < house_num < len(self._board):
+            if house_num == self._board[house_num]:
                 return True
             else:
                 return False
@@ -72,8 +71,8 @@ class SolitaireMancala:
         """
         if self.is_legal_move(house_num):
             for index in range(house_num):
-                self.board[index] += 1
-                self.board[house_num] = 0
+                self._board[index] += 1
+                self._board[house_num] = 0
     
 
     def choose_move(self):
@@ -83,7 +82,7 @@ class SolitaireMancala:
         Note that using a longer legal move would make smaller illegal
         If no legal move, return house zero
         """
-        for house_num in range(1, len(self.board)):
+        for house_num in range(1, len(self._board)):
             if self.is_legal_move(house_num):
                 return house_num
         return 0
@@ -104,7 +103,7 @@ class SolitaireMancala:
             in_game.apply_move(move)
             moves.append(move)
             move = in_game.choose_move()      
-        return plan
+        return moves
  
 
 # Create tests to check the correctness of your code
@@ -128,4 +127,4 @@ def test_mancala():
 
 # run the game
 test_mancala()
-poc_mancala_gui.run_gui(SolitaireMancala())
+poc_mancala_gui.run_gui(SolitaireMancala()) 
