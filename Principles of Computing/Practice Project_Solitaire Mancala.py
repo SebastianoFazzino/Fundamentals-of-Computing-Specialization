@@ -6,6 +6,7 @@ Goal: Move as many seeds from given houses into the store
 In GUI, you make ask computer AI to make move or click to attempt a legal move
 """
 
+import poc_mancala_gui 
 
 class SolitaireMancala:
     """
@@ -61,7 +62,7 @@ class SolitaireMancala:
             else:
                 return False
         else:
-            return false
+            return False
             
     
     def apply_move(self, house_num):
@@ -82,7 +83,7 @@ class SolitaireMancala:
         Note that using a longer legal move would make smaller illegal
         If no legal move, return house zero
         """
-        for house_num in range(1, len(self._board)):
+        for house_num in range(1, len(self.board)):
             if self.is_legal_move(house_num):
                 return house_num
         return 0
@@ -124,11 +125,7 @@ def test_mancala():
     print "Testing get_num_seeds - Computed:", my_game.get_num_seeds(3), "Expected:", config1[3]
     print "Testing get_num_seeds - Computed:", my_game.get_num_seeds(5), "Expected:", config1[5]
 
-    # add more tests here
-    
+
+# run the game
 test_mancala()
-
-
-# Import GUI code once you feel your code is correct
-# import poc_mancala_gui
-# poc_mancala_gui.run_gui(SolitaireMancala())
+poc_mancala_gui.run_gui(SolitaireMancala())
