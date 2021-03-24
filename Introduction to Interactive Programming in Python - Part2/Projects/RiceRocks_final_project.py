@@ -1,6 +1,6 @@
 # This is the final version of RiceRocks that is inspired by the classic arcade game Asteroids
 
-# Link to the project: http://www.codeskulptor.org/#user47_b30pGQU6Ng746WC_0.py
+# Link to the project:  https://py3.codeskulptor.org/#user306_uCZ2U7c1i2_0.py
 
 # we import the modules needed
 import simplegui
