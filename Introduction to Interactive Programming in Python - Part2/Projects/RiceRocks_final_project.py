@@ -279,6 +279,7 @@ def draw_group(group, canvas):
         if element.update():
             remove.add(element)
             group.difference_update(remove)
+            return True
             
 def group_collide(group, other_object):
     '''This function is used to determine if the ship collides with a rock'''
